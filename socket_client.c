@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     struct sockaddr_in remote_address;
     memset(&remote_address, 0, sizeof(remote_address));
     remote_address.sin_family = AF_INET;
-    remote_address.sin_addr.s_addr = inet_addr("140.118.121.109");
+    remote_address.sin_addr.s_addr = inet_addr("Input Server IP");
     remote_address.sin_port = htons(port);
     struct sockaddr *remote_socket_address = (struct sockaddr *) &remote_address;
     size_t socket_address_length = sizeof(struct sockaddr);
